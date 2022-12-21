@@ -21,7 +21,7 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required/>
             </li>
             <li>
               <label for="userEmail">Your email Address</label>
@@ -29,7 +29,7 @@
             </li>
             <li>
               <label for="userPassword">Your password</label>
-              <input type="password" name="user-password" id="userPassword" />
+              <input type="password" name="user-password" id="userPassword" required minlength="7" />
             </li>
           </ul>
         </section>
@@ -39,11 +39,11 @@
           <ul>
             <li>
               <label for="userAge">Your age</label>
-              <input type="number" step="100" name="user-age" id="userAge" />
+              <input type="number" step="100" name="user-age" id="userAge" min="18" max="100" />
             </li>
             <li>
               <label for="userBirthday">Your birthday</label>
-              <input type="date" name="user-birthday" id="userBirthday" />
+              <input type="date" name="user-birthday" id="userBirthday" required min='1990-01-01' max='2003-01-01' />
             </li>
             <li>
               <label for="favourite-color">Your favourite color</label>
@@ -69,6 +69,7 @@
                 name="verify"
                 id="verify-text-message"
                 value="text-message"
+                required
               />
               <label for="verify-text-message">Via text message (SMS)</label>
             </li>
@@ -78,6 +79,7 @@
                 name="verify"
                 id="verify-phone"
                 value="phone"
+                required
               />
               <label for="verify-phone">Via phone call</label>
             </li>
@@ -87,6 +89,7 @@
                 name="verify"
                 id="verify-email"
                 value="verify-email"
+                required
               />
               <label for="email">Via an email</label>
             </li>
