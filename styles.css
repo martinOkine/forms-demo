@@ -28,6 +28,10 @@ label {
   margin-bottom: 0.5rem;
 }
 
+textarea{
+  resize: none;
+}
+
 input,
 textarea,
 select {
